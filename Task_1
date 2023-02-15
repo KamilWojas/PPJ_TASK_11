@@ -1,0 +1,81 @@
+public void zad1 () {
+    }
+
+        static class Owoc {
+            private String nazwa;
+
+            public Owoc(String nazwa) {
+                this.nazwa = nazwa;
+            }
+
+            public String wyswietl() {
+                return "Owoc: nazwa=" + nazwa;
+            }
+        }
+
+    static class Granat extends Owoc {
+        private int iloscPestek;
+
+        public Granat(String nazwa, int iloscPestek) {
+            super(nazwa);
+            this.iloscPestek = iloscPestek;
+        }
+
+        @Override
+        public String wyswietl() {
+            return super.wyswietl() + ", iloscPestek=" + iloscPestek;
+        }
+    }
+
+    static class Owocz extends Owoc {
+        private double masa;
+
+        public Owocz(String nazwa, double masa) {
+            super(nazwa);
+            this.masa = masa;
+        }
+
+        public String wyswietl() {
+            return super.wyswietl() + ", masa=" + masa;
+        }
+    }
+
+    static class Jablko extends Owocz {
+        private String nazwa;
+
+        public Jablko() {
+            super("Jablko", Math.random() * (250 - 100) + 100);
+        }
+
+        @Override
+        public String wyswietl() {
+            return super.wyswietl();
+        }
+    }
+
+    static class Pomarancza extends Owocz {
+        private String nazwa;
+
+        public Pomarancza() {
+            super("Pomarancza", Math.random() * (250 - 100) + 100);
+        }
+
+        @Override
+        public String wyswietl() {
+            return super.wyswietl();
+        }
+    }
+
+    static class Gruszka extends Owocz {
+        private String nazwa;
+
+        public Gruszka() {
+            super("Gruszka", Math.random() * (250 - 100) + 100);
+        }
+
+        @Override
+        public String wyswietl() {
+            return super.wyswietl();
+        }
+    }
+}
