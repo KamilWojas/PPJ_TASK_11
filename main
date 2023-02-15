@@ -1,0 +1,15 @@
+ public class Main {
+        public static void main(String[] args) {
+            Drzewo[] las = new Drzewo[5];
+            las[0] = new DrzewoIglaste(false, 25, "kulisty", 100, 5);
+            las[1] = new DrzewoLisciaste(false, 30, "smukły", 2);
+            las[2] = new Drzewo(true, 40, "płaski");
+            las[3] = new DrzewoOwocowe(false, 15, "kolumnowy", 3, "jabłko");
+            las[4] = new DrzewoIglaste(true, 18, "kulisty", 50, 10);
+
+
+            for (Drzewo drzewo : las) {
+                System.out.println(drzewo);
+            }
+        }
+    }
